@@ -1,0 +1,168 @@
+\documentclass[11pt, a4paper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.5cm,outer=1.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{Course Name} }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{\today} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+
+
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+
+
+\lstset{
+%language=bash,                          % Code langugage
+basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+commentstyle=\color{gray},              % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+backgroundcolor=\color{lightlightgray}, % Choose background color
+frame=none,                             % A frame around the code
+tabsize=2,                              % Default tab size
+captionpos=t,                           % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{center}
+{\Large \textsc{Макроэкономика --- 2}}
+\end{center}
+\begin{center}
+Осень 2018
+\end{center}
+%\date{September 26, 2014}
+
+\begin{center}
+\rule{6in}{0.4pt}
+\begin{minipage}[t]{.75\textwidth}
+\begin{tabular}{llcccll}
+\textbf{Лектор:} & Кирилл Сосунов & & &  & \textbf{Email:} & \href{mailto:XYZ@email.org}{XYZ@email.org} \\
+\textbf{Семинарист:} &  Диана & & & & \textbf{Email:} & \href{mailto:XYZ@email.org}{XYZ@email.org} \\ 
+\textbf{Семинарист:} &  Александр Тишин & & & & \textbf{Email:} & \href{mailto:XYZ@email.org}{atishin@nes.ru}
+\end{tabular}
+\end{minipage}
+\rule{6in}{0.4pt}
+\end{center}
+\vspace{.5cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+\noindent\textbf{Страницы курса:} \begin{enumerate}
+\item \url{macro.cf}
+\item \url{https://phenyard.github.io/macro201/}
+\end{enumerate}
+
+\vskip.15in
+\noindent\textbf{Office Hours:} После занятия, либо по предварительной договоренности. 
+
+\vskip.15in
+\noindent\textbf{Литература:} %\footnotemark
+This is a  restricted list of various interesting and useful books that will be touched during the course. You need to consult them occasionally.
+\begin{itemize}
+\item Christopher M. Bishop, {\textit{Pattern Recognition and Machine Learning}}, Springer, 2006.
+\item Peter J. Carrington, John Scott, and Stanley Wasserman, {\textit{Models and Methods in Social Network Analysis}}, Cambridge University Press, 2005.
+\item Richard O. Duda, Peter E. Hart, and David G. Stork, {\textit{Pattern Classification}}, Wiley, 2nd ed., 2000.
+\item Peter Flach, {\textit{Machine Learning: The Art and Science of Algorithms that Make Sense of Data}}, Cambridge University Press, 2012.
+
+\end{itemize} 
+
+% \footnotetext{Downloadable ebook versions are available on AeLP.}
+
+\vskip.15in
+\noindent\textbf{Цели курса:}  This course is  primarily designed for graduate students ... 
+
+
+
+
+\vspace*{.15in}
+
+\noindent \textbf{Предварительный план курса:}
+\begin{center} 
+\begin{minipage}{5in}
+\begin{flushleft}
+%Chapter 1 \dotfill ~$\approx$ 3 days \\
+{\color{darkgreen}{\Rectangle}} ~A little of probability theory and graph theory	
+\end{flushleft}
+\end{minipage}
+\end{center}
+
+\vspace*{.15in}
+\noindent\textbf{Оценки:}  
+\begin{itemize}
+\item 10 \% Домашние задания (4 штуки, раз в 2-3 недели, дедлайн каждой домашней работы 1 неделя (до следующего семинара)
+\item 10 \% Десятиминутные тесты в классе (4 штуки, даются без предупреждения)
+\item  30 \% Контрольная работа 
+\item 50 \% Финальный экзамен  
+\end{itemize}
+ИТОГОВАЯ? 
+
+\vskip.15in
+\noindent\textbf{Важные даты:}
+\begin{center} \begin{minipage}{3.8in}
+\begin{flushleft}
+Midterm \#1      \dotfill ~\={A}b\={a}n 16, 1393  \\
+Final Exam       \dotfill ~Dey 18, 1393  \\
+\end{flushleft}
+\end{minipage}
+\end{center}
+
+
+
+
+\vskip.15in
+\noindent\textbf{Посещение:}  Посещение лекций и семинаров необходимо и ожидается от студентов. 
+
+\vskip.15in
+\noindent\textbf{Академическая этика:}  Обман, плагиат, списывание и любые другие нарушения академической этики недопустимы.
+
+
+%%%%%% THE END 
+\end{document} 
