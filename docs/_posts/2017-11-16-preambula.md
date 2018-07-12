@@ -13,7 +13,7 @@ layout: nil
 
 ## Текущая успеваемость
 
-* Посмотри баллы в [табличке с баллами](https://docs.google.com/spreadsheets/d/1BT3clwaqu7GgAT65gmdMoZ3xlAoD7f-aMeLZYhYIzGU/edit?usp=sharing)
+* Посмотри баллы в [табличке с баллами](https://docs.google.com/spreadsheets/d/e/2PACX-1vTGGb3qlIzd-7DRYJ9oZg4yFt-pRr9Zp7zb9f0TXGAZdSnYh78MZoWdZnf6f4DuLtyPlfATyE7_2EBj/pubhtml?gid=68825790&single=true)
 
 ## Форма сдачи домашки
 
