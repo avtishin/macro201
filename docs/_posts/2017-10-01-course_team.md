@@ -10,24 +10,18 @@ layout: nil
 
 ### Любому из нас вы можете писать по любым вопросам (смелее, мы не кусаемся)
 
-Очная часть
+# Кирилл Сосунов
+## Лектор
 
-# Филя Ульянкин
-## Лектор, просто хороший человек
-<img src="https://github.com/FUlyankin/LaTeX/blob/master/docs/_includes/photo1.jpg?raw=true" style="width:20%">
-* [Vk.com](https://vk.com/ppilif)   
-* [Telegram](//telegram.me/ppilif)   
 
-# Костя Рыбак
-## Семинарист, готов поставить зачет за Гиннес
-<img src="https://github.com/FUlyankin/LaTeX/blob/master/docs/_includes/photo2.jpg?raw=true" style="width:20%">
-* [Vk.com](https://vk.com/rybakconst)   
-* [Telegram](//telegram.me/rybakconst)   
-
-Заочная часть
+# Диана Петрова
+## Семинарист
+<img src="https://github.com/phenyard/macro201/blob/master/docs/_includes/Petrova.jpg?raw=true" style="width:20%">
+* [Vk.com](https://vk.com/ссылка)   
+* [Telegram](//telegram.me/ссылка)   
 
 # Саша Тишин
 ## Семинарист
-<img src="https://github.com/FUlyankin/LaTeX/blob/master/docs/_includes/photo3.jpg?raw=true" style="width:20%">
-* [Vk.com](https://vk.com/bolshoyti)   
+<img src="https://github.com/phenyard/macro201/blob/master/docs/_includes/photo3.jpg?raw=true" style="width:20%">
+* email: aishin at nes.ru
 * [Telegram](//telegram.me/atishin)  (@atishin)
