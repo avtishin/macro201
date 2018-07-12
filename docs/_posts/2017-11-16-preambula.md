@@ -13,11 +13,15 @@ layout: nil
 
 ## Текущая успеваемость
 
-* Посмотри баллы в [табличке с баллами](https://docs.google.com/spreadsheets/d/e/2PACX-1vRoFWrV3934rZdc_FRMEcnEXw4zwvIwg9JIcJMex4uXz2eI5GSwBtNIc9s8XgON5yFzXu3PddwYFg7T/pubhtml?gid=1636038328&single=true)
+* Посмотри баллы в [табличке с баллами](https://docs.google.com/spreadsheets/d/1BT3clwaqu7GgAT65gmdMoZ3xlAoD7f-aMeLZYhYIzGU/edit?usp=sharing)
 
 ## Форма сдачи домашки
 
-* Сдай домашку в [уютной форме для сдачи домашек](Пусто)
+* Сдай домашку в [уютной форме для сдачи домашек](https://goo.gl/forms/w3lbdElyVV0KzwiT2)
 
 
-* Накатай свой анонимный отзыв без смс и регистрации в [уютной анонимке](Пусто)
+* Накатай свой анонимный отзыв без смс и регистрации в [уютной анонимке](https://goo.gl/forms/oML34frVuKK3xe4G2)
+
+## Оцнека курса
+ > Будет доступно на последних неделях
+* Оцени курс в [уютной анонимке](Пусто)

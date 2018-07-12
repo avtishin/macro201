@@ -5,7 +5,7 @@ title: 'Полезные ссылки'
 layout: nil
 ---
 
-Так как не все из вас знакомы с таким монстром как LaTeX, то мы публикуем полезные ссылку для тех, кто захочет самостоятельно изучить (и получать +XX% к домашкам)
+Так как не все из вас знакомы с таким монстром как LaTeX, то мы публикуем полезные ссылки для тех, кто захочет самостоятельно изучить (и получать +XX% к домашкам).
 
 ### Курс Филиппа Ульянкина, РАНХиГС
 
@@ -19,11 +19,11 @@ layout: nil
 
 ### Другие курсы по LaTeX
 
-Если очень лень ходить на пары, то можно посмотреть [документы и презентации в LaTeX от ВШЭ](https://www.coursera.org/learn/latex/home/welcome). Это введение в LaTeX от Высшей Школы Экономики на русском языке.
+Если очень лень, то можно посмотреть [документы и презентации в LaTeX от ВШЭ](https://www.coursera.org/learn/latex/home/welcome). Это введение в LaTeX от Высшей Школы Экономики на русском языке.
 
 **Свои вопросы по LaTeX** лучше всего задать на [tex.stackexchange.com](http://tex.stackexchange.com/)
 
-### Еще полезные ресурсы 
+### Еще полезные ресурсы
 
 *  [Куча различных примеров](http://www.latextemplates.com/) использования LaTeX, шаблоны
 *  [Ещё куча примеров](https://www.overleaf.com/latex/templates) использования LaTeX, шаблоны
@@ -33,4 +33,4 @@ layout: nil
 *  [Примеры рисунков в Tikz](http://www.texample.net/tikz/)                
 *  [Куча](http://tex.stackexchange.com/questions/158668/nice-scientific-pictures-show-off) разной безумной анимации и картинок, сделанных с помощью LaTeX
 *  [Темы для презентаций](https://www.hartwork.org/beamer-theme-matrix/) в Beamer
-*  [Три базовые открытые презентации](https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1#.V_o9Bh8xDqN), из которых я кое-что спёр для курса
+*  [Три базовые открытые презентации](https://www.overleaf.com/latex/learn/free-online-introduction-to-latex-part-1#.V_o9Bh8xDqN)
