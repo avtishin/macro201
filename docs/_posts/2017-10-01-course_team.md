@@ -6,13 +6,12 @@ layout: nil
 
 # Текущая команда курса:
 
-> Заменить людей!
 
 ### Любому из нас вы можете писать по любым вопросам (смелее, мы не кусаемся)
 
 # Кирилл Сосунов
 ## Лектор
-
+<img src="https://github.com/phenyard/macro201/blob/master/docs/_includes/Sosunov.jpg?raw=true" style="width:20%">
 
 # Диана Петрова
 ## Семинарист
