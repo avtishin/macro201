@@ -16,8 +16,8 @@ layout: nil
 # Диана Петрова
 ## Семинарист
 <img src="https://github.com/phenyard/macro201/blob/master/docs/_includes/Petrova.jpg?raw=true" style="width:20%">
-* [Vk.com](https://vk.com/ссылка)   
-* [Telegram](//telegram.me/ссылка)   
+* [Vk.com](https://vk.com/id141126101)   
+* email: diana.petrova.1993 at mail.ru
 
 # Саша Тишин
 ## Семинарист
