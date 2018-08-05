@@ -1,0 +1,210 @@
+\documentclass[11pt, a4paper]{article}
+%\usepackage{geometry}
+\usepackage[inner=1.5cm,outer=1.5cm,top=2.5cm,bottom=2.5cm]{geometry}
+\pagestyle{empty}
+\usepackage{graphicx}
+\usepackage{fancyhdr, lastpage, bbding, pmboxdraw}
+\usepackage[usenames,dvipsnames]{color}
+\definecolor{darkblue}{rgb}{0,0,.6}
+\definecolor{darkred}{rgb}{.7,0,0}
+\definecolor{darkgreen}{rgb}{0,.6,0}
+\definecolor{red}{rgb}{.98,0,0}
+\usepackage[colorlinks,pagebackref,pdfusetitle,urlcolor=darkblue,citecolor=darkblue,linkcolor=darkred,bookmarksnumbered,plainpages=false]{hyperref}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+
+\pagestyle{fancyplain}
+\fancyhf{}
+\lhead{ \fancyplain{}{ Macroeconomics -- II } }
+%\chead{ \fancyplain{}{} }
+\rhead{ \fancyplain{}{\today} }
+%\rfoot{\fancyplain{}{page \thepage\ of \pageref{LastPage}}}
+\fancyfoot[RO, LE] {page \thepage\ of \pageref{LastPage} }
+\thispagestyle{plain}
+
+%%%%%%%%%%%% LISTING %%%
+\usepackage{listings}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\usepackage{verbatim} % used to display code
+\usepackage{fancyvrb}
+\usepackage{acronym}
+\usepackage{amsthm}
+\VerbatimFootnotes % Required, otherwise verbatim does not work in footnotes!
+
+
+
+\definecolor{OliveGreen}{cmyk}{0.64,0,0.95,0.40}
+\definecolor{CadetBlue}{cmyk}{0.62,0.57,0.23,0}
+\definecolor{lightlightgray}{gray}{0.93}
+
+
+
+\lstset{
+%language=bash,                          % Code langugage
+basicstyle=\ttfamily,                   % Code font, Examples: \footnotesize, \ttfamily
+keywordstyle=\color{OliveGreen},        % Keywords font ('*' = uppercase)
+commentstyle=\color{gray},              % Comments font
+numbers=left,                           % Line nums position
+numberstyle=\tiny,                      % Line-numbers fonts
+stepnumber=1,                           % Step between two line-numbers
+numbersep=5pt,                          % How far are line-numbers from code
+backgroundcolor=\color{lightlightgray}, % Choose background color
+frame=none,                             % A frame around the code
+tabsize=2,                              % Default tab size
+captionpos=t,                           % Caption-position = bottom
+breaklines=true,                        % Automatic line breaking?
+breakatwhitespace=false,                % Automatic breaks only at whitespace?
+showspaces=false,                       % Dont make spaces visible
+showtabs=false,                         % Dont make tabls visible
+columns=flexible,                       % Column format
+morekeywords={__global__, __device__},  % CUDA specific keywords
+}
+
+%%% Работа с русским языком
+\usepackage{cmap}					% поиск в PDF
+\usepackage{mathtext} 				% русские буквы в формулах
+\usepackage[T2A]{fontenc}			% кодировка
+\usepackage[utf8]{inputenc}			% кодировка исходного текста
+\usepackage[english,russian]{babel}	% локализация и переносы
+\usepackage{longtable}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\begin{center}
+{\Large \textsc{Макроэкономика --- 2}}
+\end{center}
+\begin{center}
+Осень 2018
+\end{center}
+%\date{September 26, 2014}
+
+\begin{center}
+\rule{6in}{0.4pt}
+\begin{minipage}[t]{.75\textwidth}
+\begin{tabular}{llcccll}
+\textbf{Лектор:} & Кирилл Сосунов & & &  & \textbf{Email:} & \href{mailto:XYZ@email.org}{XYZ@email.org} \\
+\textbf{Семинарист:} &  Диана Петрова & & & & \textbf{Email:} & \href{mailto:diana.petrova.1993@mail.ru}{diana.petrova.1993@mail.ru} \\ 
+\textbf{Семинарист:} &  Александр Тишин & & & & \textbf{Email:} & \href{mailto:atishin@nes.ru}{atishin@nes.ru}
+\end{tabular}
+\end{minipage}
+\rule{6in}{0.4pt}
+\end{center}
+\vspace{.5cm}
+\setlength{\unitlength}{1in}
+\renewcommand{\arraystretch}{2}
+
+\noindent\textbf{Страницы курса:} \begin{enumerate}
+\item \url{macro.cf}
+\item \url{https://phenyard.github.io/macro201/}
+\end{enumerate}
+
+\vskip.15in
+\noindent\textbf{Office Hours:} После занятия, либо по предварительной договоренности. 
+
+\vskip.15in
+\noindent\textbf{Литература:} %\footnotemark
+
+\begin{enumerate}
+
+\item	Mankiw N.G. Macroeconomics, 7th edition, Worth Publishers. 2010 или
+\item	Mankiw N.G. Macroeconomics, 8th edition, Worth Publishers. 2013
+\item	Мэнкью Н.Г. Макроэкономика.  Пер. с англ. - М.: Изд-во МГУ, 1994. — 736 с.
+\item	Мэнкью Н.Г., Тейлор М. П. Макроэкономика, 2-е издание. Изд-во Питер, 2016, - 560 с.
+\item	Абель Э., Бернанке Б. Макроэкономика - Учебное пособие, 2010, Издательство: «Питер»
+\item	Бланшар О. Макроэкономика: учебник / О. Бланшар; [пер. с англ.]; науч. ред. пер. Л. Л. Любимов; Гос. ун-т — Высшая школа экономики. — М.: Изд. дом Гос. ун-та — Высшей школы экономики, 2010. — 671, [1] с  — Перевод изд.: Blanchard Olivier. Macroeconomics. Third Edition. Pearson Education Inc.; Prentice Hall, 2003. — 2000 экз. — ISBN 978-5-7598-0556-4 (в пер.).
+\item	Шагас Н.Л., Туманова Е.А. Макроэкономика-2, 2006 Издательство: Издательство МГУ ISBN: 5-7218-0869-1 
+
+\end{enumerate}
+
+\vskip.15in
+%\noindent\textbf{Цели курса:}  This course is  primarily designed for graduate students ... 
+
+\noindent \textbf{Предварительный план курса:}\\
+
+\begin{longtable} {|p{1.6cm}|p{7cm}|p{1.6cm}|p{7cm}|}
+
+\multicolumn{2}{c}{Лекции}&\multicolumn{2}{c}{Семинары}\\
+\hline
+Дата	&Название&	Дата&	Название\\
+\hline
+07.09.2018&	Макроэкономические данные и повторение базовых определений курса "Макроэкономика-1"&	07.09.2018&	Повторение ключевых терминов курса «Макроэкономика-1»\\
+14.09.2018&	Модель общего макроэкономического равновесия в долгосрочном периоде&	14.09.2018&	Макроэкономические данные\\
+21.09.2018&	Последствия государственной политики в закрытой экономике в долгосрочном периоде&	21.09.2018&	Модель общего макроэкономического равновесия в долгосрочном периоде\\
+28.09.2018&	Базовые принципы функционирования системы денежного обращения&	28.09.2018&	Последствия государственной политики в закрытой экономике в долгосрочном периоде\\
+05.10.2018&	Причины и последствия инфляции в долгосрочном периоде&	05.10.2018&	Базовые принципы функционирования системы денежного обращения\\
+12.10.2018&	Модель малой открытой экономики в долгосрочном периоде&	12.10.2018&	Причины и последствия инфляции в долгосрочном периоде\\
+19.10.2018&	Последствия государственной политики в открытой экономике в долгосрочном периоде. Большая открытая экономика&	19.10.2018&	Модель малой открытой экономики в долгосрочном периоде\\
+26.10.2018&	Причины существования безработицы в долгосрочном периоде&	26.10.2018&	Последствия государственной политики в открытой экономике в долгосрочном периоде. Большая открытая экономика\\
+02.11.2018&	Контрольная работа&	02.11.2018&	Разбор контрольной работы\\
+09.11.2018&	Модели структурной безработицы&	09.11.2018&	Причины существования безработицы в долгосрочном периоде\\
+16.11.2018&	Модель экономического роста Солоу&	16.11.2018&	Модели структурной безработицы\\
+23.11.2018&	Факторы экономического роста в модели Солоу. Эмпрические закономерности экономического роста&	23.11.2018&	Модель экономического роста Солоу\\
+30.11.2018&	Проблема конвергенции. Расчет источников экономического роста. Базовая модель эндогенного экономического роста&	30.11.2018&	Факторы экономического роста в модели Солоу. Эмпрические закономерности экономического роста \\
+07.12.2018&	Введение в теорию экономических колебаний&	07.12.2018&	Проблема конвергенции. Расчет источников экономического роста. Базовая модель эндогенного экономического роста \\
+14.12.2018&	Постановка модели IS-LM (частичное макроэкономическое равновесие в краткосрочном периоде)&	14.12.2018&	Введение в теорию экономических колебаний\\
+21.12.2018&	Применение модели IS-LM для анализа последствий экономической политики в краткосрочном периоде&	21.12.2018&	Постановка модели IS-LM (частичное макроэкономическое равновесие в краткосрочном периоде)\\
+\hline
+\end{longtable}
+
+% \begin{center} 
+% \begin{minipage}{5in}
+% \begin{flushleft}
+% %Chapter 1 \dotfill ~$\approx$ 3 days \\
+% {\color{darkgreen}{\Rectangle}} ~A little of probability theory and graph theory	
+% \end{flushleft}
+% \end{minipage}
+% \end{center}
+
+%\vspace*{.15in}
+\newpage
+\noindent\textbf{Оценки:}  
+\begin{itemize}
+\item 10 \% Домашние задания (4 штуки, раз в 2-3 недели, дедлайн каждой домашней работы 1 неделя (до следующего семинара)
+\item 10 \% Десятиминутные тесты в классе (4 штуки, даются без предупреждения)
+\item  30 \% Контрольная работа 
+\item 50 \% Финальный экзамен  
+\end{itemize}
+
+Шкала относительная, ваша оценка будет зависеть от общего распределения, т.е. от оценок ваших однокурсников. Лучший результат получает наивысшую оценку, остальные считаются от него. Например, если кто-то получил 80/100 по курсу (и это максимальная оценка), то он получает 10 баллов. Все остальные получают оценки по распределению, оценка зависит от процентиля распределения (подробнее https://ru.wikipedia.org/wiki/Квантиль). То есть, если, например, 40\% составляет 32, а 50\% составляет 43, а у вас набрано 36, то вы получаете 5/10.
+
+\noindent\textbf{Процентили:}  
+
+\begin{itemize}
+\item 91\% - 100\% - 10
+\item 81\% - 90\% - 9
+\item 71\% - 80\% - 8
+\item 61\% - 70\% - 7
+\item 51\% - 60\% - 6
+\item 41\% - 50\% - 5
+\item 31\% - 40\% - 4
+\item 21\% - 30\% - 3
+\item 11\% - 20\% - 2
+\item 1\% - 10\% - 1
+\end{itemize}
+
+
+\vskip.15in
+\noindent\textbf{Важные даты:}
+\begin{center} \begin{minipage}{3.8in}
+\begin{flushleft}
+Midterm \#1      \dotfill Ноябрь 02, 2018  \\
+Final Exam       \dotfill Январь , 2019  \\
+\end{flushleft}
+\end{minipage}
+\end{center}
+
+
+
+
+\vskip.15in
+\noindent\textbf{Посещение:}  Посещение лекций и семинаров необходимо и ожидается от студентов. 
+
+\vskip.15in
+\noindent\textbf{Академическая этика:}  Обман, плагиат, списывание и любые другие нарушения академической этики недопустимы.
+
+
+%%%%%% THE END 
+\end{document} 

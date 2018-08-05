@@ -22,5 +22,5 @@ layout: nil
 # Саша Тишин
 ## Семинарист
 <img src="https://github.com/phenyard/macro201/blob/master/docs/_includes/photo3.jpg?raw=true" style="width:20%">
-* email: aishin at nes.ru
+* email: atishin at nes.ru
 * [Telegram](//telegram.me/atishin)  (@atishin)
