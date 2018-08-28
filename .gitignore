@@ -11,6 +11,8 @@
 *.vrb
 .Rhistory
 .DS_Store
+.dropbox
+*.tex
 *.ipynb_checkpoints
 HA1.tex
 HA2.tex
